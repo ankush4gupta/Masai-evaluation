@@ -1,12 +1,11 @@
 const express = require("express");
-const User = require("../models/user.model")
+const Saving = require("../models/saving.model")
 const route = express.Router()
 
 route.post("", async (req, res) => {
     try {
-        const user = await User.create(req.body);
-
-        res.status(201).send(user)
+        const saving = await Saving.create(req.body);
+        res.status(201).send(saving)
     } catch (error) {
         res.status(500).send(error.message)
     }
@@ -14,8 +13,8 @@ route.post("", async (req, res) => {
 
 route.get("", async (req, res) => {
     try {
-        const user = await User.find().lean().exec();
-        res.status(201).send(user)
+        const saving = await Saving.find().lean().exec();
+        res.status(201).send(saving)
     } catch (error) {
         res.status(500).send(error.message)
     }
