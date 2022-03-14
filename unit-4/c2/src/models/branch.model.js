@@ -1,7 +1,7 @@
 
 const mongoose = require("mongoose")
 
-const Usershema = mongoose.Schema({
+const branchschema = mongoose.Schema({
     name: { type: String, required: true },
     address: { type: String, required: true },
     IFSC: { type: String, required: true },
@@ -11,4 +11,4 @@ const Usershema = mongoose.Schema({
 
     timestamps: true
 })
-module.exports = mongoose.model("branch", Usershema)
+module.exports = mongoose.model("branch", branchschema)

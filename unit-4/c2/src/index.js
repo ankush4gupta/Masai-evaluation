@@ -5,6 +5,7 @@ const Usercontroller = require("./controllers/user.controller")
 const Savingcontroller = require("./controllers/saving.controller")
 const Fixedcontroller = require("./controllers/fixed.controller")
 const Branchcontroller = require("./controllers/branch.controller")
+const mastercontroller = require("./controllers/master.controller")
 
 app.use(express.json())
 
@@ -14,6 +15,7 @@ app.use("/user", Usercontroller)
 app.use("/saving", Savingcontroller)
 app.use("/fixed", Fixedcontroller)
 app.use("/branch", Branchcontroller)
+app.use("/master", mastercontroller)
 
 
 

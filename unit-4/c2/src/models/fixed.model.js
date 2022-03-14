@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const savingshema = mongoose.Schema({
+const fixedschema = mongoose.Schema({
     account_number: { type: Number, required: true, unique: true },
     balance: { type: Number, required: true },
     interestRate: { type: Number, required: true },
@@ -12,4 +12,4 @@ const savingshema = mongoose.Schema({
 }, {
     timestamps: true
 })
-module.exports = mongoose.model("fixed", savingshema)
+module.exports = mongoose.model("fixed", fixedschema)
