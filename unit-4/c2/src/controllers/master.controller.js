@@ -11,6 +11,10 @@ route.post("", async (req, res) => {
     }
 })
 
+
+
+
+
 route.get("", async (req, res) => {
     try {
         const master = await Master.find().lean().exec();
