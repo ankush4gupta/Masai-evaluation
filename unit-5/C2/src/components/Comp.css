@@ -1,0 +1,11 @@
+.controls {
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    padding-left: 20px;
+    align-items: flex-start;
+}
+
+.controls>button {
+    padding: 5px 10px;
+}

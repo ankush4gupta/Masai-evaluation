@@ -1,0 +1,147 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "first_name": "Caroline",
+      "last_name": "Jouanny",
+      "email": "cjouanny0@mtv.com",
+      "gender": "Female",
+      "age": 17,
+      "tenth_score": 31,
+      "twelth_score": 20,
+      "preferred_branch": "sports"
+    },
+    {
+      "id": 2,
+      "first_name": "Ruthy",
+      "last_name": "Delion",
+      "email": "rdelion1@google.co.jp",
+      "gender": "Female",
+      "age": 13,
+      "tenth_score": 11,
+      "twelth_score": 40,
+      "preferred_branch": "arts"
+    },
+    {
+      "id": 3,
+      "first_name": "Clarice",
+      "last_name": "Cokly",
+      "email": "ccokly2@gravatar.com",
+      "gender": "Female",
+      "age": 17,
+      "tenth_score": 94,
+      "twelth_score": 12,
+      "preferred_branch": "science"
+    },
+    {
+      "id": 4,
+      "first_name": "Judon",
+      "last_name": "Jobes",
+      "email": "jjobes3@nature.com",
+      "gender": "Male",
+      "age": 15,
+      "tenth_score": 5,
+      "twelth_score": 44,
+      "preferred_branch": "sports"
+    },
+    {
+      "id": 5,
+      "first_name": "Wenonah",
+      "last_name": "Extence",
+      "email": "wextence4@yolasite.com",
+      "gender": "Female",
+      "age": 14,
+      "tenth_score": 49,
+      "twelth_score": 92,
+      "preferred_branch": "law"
+    },
+    {
+      "id": 6,
+      "first_name": "Garreth",
+      "last_name": "Roust",
+      "email": "groust5@nbcnews.com",
+      "gender": "Male",
+      "age": 15,
+      "tenth_score": 28,
+      "twelth_score": 62,
+      "preferred_branch": "arts"
+    },
+    {
+      "id": 7,
+      "first_name": "Beverly",
+      "last_name": "Archbell",
+      "email": "barchbell6@google.co.jp",
+      "gender": "Female",
+      "age": 19,
+      "tenth_score": 7,
+      "twelth_score": 69,
+      "preferred_branch": "arts"
+    },
+    {
+      "id": 8,
+      "first_name": "Pavlov",
+      "last_name": "Jeffry",
+      "email": "pjeffry7@flavors.me",
+      "gender": "Male",
+      "age": 20,
+      "tenth_score": 43,
+      "twelth_score": 74,
+      "preferred_branch": "commerce"
+    },
+    {
+      "first_name": "Ankush",
+      "last_name": "Gupta",
+      "email": "ankush_fw14_733@masai.school",
+      "gender": "Male",
+      "age": "21",
+      "tenth_score": "88",
+      "twelth_score": "81",
+      "preferred_branch": "science",
+      "id": 9
+    },
+    {
+      "first_name": "Reena",
+      "last_name": "Sharma",
+      "email": "reena@r.com",
+      "gender": "Female",
+      "age": "23",
+      "tenth_score": "80",
+      "twelth_score": "76",
+      "preferred_branch": "commerce",
+      "id": 10
+    },
+    {
+      "first_name": "Mohan",
+      "last_name": "Prasad",
+      "email": "M@m.com",
+      "age": "23",
+      "gender": "male",
+      "tenth_score": "78",
+      "twelth_score": "42",
+      "preferred_branch": "science",
+      "id": 23
+    },
+    {
+      "first_name": "Ayush",
+      "last_name": "Gupta",
+      "email": "ankushgupta.41097@gmail.com",
+      "age": "22",
+      "gender": "male",
+      "tenth_score": "78",
+      "twelth_score": "34",
+      "preferred_branch": "commerce",
+      "id": 24
+    },
+    {
+      "first_name": "ad",
+      "last_name": "sad",
+      "email": "reena@r.com",
+      "age": "22",
+      "gender": "female",
+      "tenth_score": "234",
+      "twelth_score": "123",
+      "preferred_branch": "commerce",
+      "id": 25
+    }
+  ]
+}
