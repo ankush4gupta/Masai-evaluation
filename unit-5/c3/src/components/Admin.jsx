@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 export const Admin = () => {
-
+   
     const [pos, setpos] = useState({});
     //  use reqres to log user in.
     const handleinput = (e) => {
         const { value, name } = e.target;
-        setlog({ ...log, [name]: value })
+        setpos({ ...log, [name]: value })
     }
     const formsub = (e) => {
         e.preventDefault();
