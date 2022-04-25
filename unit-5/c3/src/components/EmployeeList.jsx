@@ -6,7 +6,7 @@ import { useContext } from "react";
 
 import { Link, Navigate } from "react-router-dom";
 export const EmployeeList = () => {
-    const { handleudata } = useContext(AuthContext)
+    const { handleudata, handleID } = useContext(AuthContext)
     const [user, setuser] = useState([]);
 
     useEffect(() => {
@@ -19,6 +19,8 @@ export const EmployeeList = () => {
 
     }
     const particular = (id) => {
+        console.log(id)
+        handleID(id)
 
     }
     console.log(user)
@@ -27,7 +29,7 @@ export const EmployeeList = () => {
             {/* On clicking this card anywhere, user goes to user details */}
             {
                 user.map((e) => {
-                    return <Link to="/employees/:id"><div className="employee_card" onClick={particular(e.id)}>
+                    return <Link to="/employees/:e.id"><div className="employee_card" onClick={particular(e.id)}>
                         <img className="employee_image" src={e.image} />
                         <span className="employee_name">{e.employee_name}</span>
                         <span className="employee_title">{e.title}</span>

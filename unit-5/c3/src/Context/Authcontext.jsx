@@ -17,7 +17,12 @@ export const AuthContextProvider = ({ children }) => {
     const handleAuth = (state) => {
         setisAuth(state)
     }
+
+    const [userid, setuserid] = useState();
+    const handleID = (num) => {
+        setuserid(num)
+    }
     return <AuthContext.Provider value={{
-        isAuth, handleAuth, uData, handleudata
+        isAuth, handleAuth, uData, handleudata, handleID, userid
     }}>{children}</AuthContext.Provider>
 }

@@ -1,14 +1,18 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { AuthContext } from "../Context/Authcontext";
+import { useContext } from "react";
 export const EmployeeDetails = () => {
-    const { id } = useParams();
-    console.log("id", id)
+
+    const { userid } = useContext(AuthContext);
+    console.log(userid)
+
     useEffect(() => {
         getuser()
     }, [])
     const getuser = async () => {
-        let d = await axios.get(`https://reqres.in/api/users/${id}`)
+        let d = await axios.get(`https://reqres.in/api/users/${userid}`)
         console.log(d.data)
     }
 

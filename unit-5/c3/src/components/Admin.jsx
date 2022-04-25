@@ -1,22 +1,39 @@
+import { useEffect, useState } from "react";
 export const Admin = () => {
+    const { handleAuth
+    } = useContext(AuthContext)
+    const [pos, setpos] = useState({});
+    //  use reqres to log user in.
+    const handleinput = (e) => {
+        const { value, name } = e.target;
+        setlog({ ...log, [name]: value })
+    }
+    const formsub = (e) => {
+        e.preventDefault();
+        axios.post(`http://localhost:8080/employee`, log).then((response) => {
+            handleAuth(true);
+            window.alert("login succesfully")
+        })
+    }
     return (
-        <form className="createEmployee">
-            <input type="text" placeholder="Employee Name" name="employee_name" />
-            <input type="text" placeholder="Employee id" name="employee_id" />
+        <form className="createEmployee" onSubmit={formsub}>
+            <input type="text" placeholder="Employee Name" name="employee_name" onClick={handleinput} />
+            <input type="text" placeholder="Employee id" name="employee_id" onClick={handleinput} />
             <select name="title">
                 <option value="intern">Intern</option>
                 <option value="Jr Software Developer">Jr Software Developer</option>
                 <option value="Sr Software Developer">Sr Software Developer</option>
                 <option value="Team Lead">Team Lead</option>
             </select>
-            <input type="number" placeholder="Salary" name="salary" />
-            <input type="text" placeholder="Image" name="image" />
-            <input type="text" placeholder="User Name" name="username" />
-            <input type="password" placeholder="Password" name="password" />
+            <input type="number" placeholder="Salary" name="salary" onClick={handleinput} />
+            <input type="text" placeholder="Image" name="image" onClick={handleinput} />
+            <input type="text" placeholder="User Name" name="username" onClick={handleinput} />
+            <input type="password" placeholder="Password" name="password" onClick={handleinput} />
             <input
                 type="text"
                 placeholder="Enter tasks separated by commas"
                 name="tasks"
+                onClick={handleinput}
             />
             <select name="status" id="status">
                 <option value="">Select Status</option>
