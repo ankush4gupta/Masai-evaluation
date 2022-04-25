@@ -1,17 +1,18 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 export const Admin = () => {
-   
+
     const [pos, setpos] = useState({});
     //  use reqres to log user in.
     const handleinput = (e) => {
         const { value, name } = e.target;
-        setpos({ ...log, [name]: value })
+        setpos({ ...pos, [name]: value })
     }
     const formsub = (e) => {
         e.preventDefault();
-        axios.post(`http://localhost:8080/employee`, log).then((response) => {
-            handleAuth(true);
-            window.alert("login succesfully")
+        axios.post(`http://localhost:8080/employee`, pos).then((response) => {
+
+            window.alert("data added")
         })
     }
     return (
