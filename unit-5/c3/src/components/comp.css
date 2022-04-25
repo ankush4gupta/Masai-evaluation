@@ -1,0 +1,11 @@
+.list_container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-around;
+}
+
+.employee_card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blueviolet;
+}
