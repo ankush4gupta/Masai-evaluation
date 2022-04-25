@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 export const Admin = () => {
-    const { handleAuth
-    } = useContext(AuthContext)
+
     const [pos, setpos] = useState({});
     //  use reqres to log user in.
     const handleinput = (e) => {
